@@ -8,7 +8,7 @@ router.post('/signup', userController.signup);
 
 // // POST /users/login - User login
 router.post('/login', userController.login);
-
+ 
 // // GET /users/logout - User logout
 // router.get('/users/logout', userController.logout);
 

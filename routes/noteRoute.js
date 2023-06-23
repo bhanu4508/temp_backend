@@ -4,8 +4,8 @@ const authMiddleware = require("../middleware/authMiddleware");
 const noteController = require('../controllers/noteController');
 
 // middle ware for authentication
-router.use(authMiddleware); 
-
+router.use(authMiddleware);  
+ 
 // GET /notes - Get all notes
 router.get('/notes', noteController.getAllNotes);
 
@@ -19,7 +19,7 @@ router.post('/notes', noteController.createNote);
 router.put('/notes/:id', noteController.updateNote);
 
 // DELETE /notes/:id - Delete a note
-router.delete('/notes/:id', noteController.deleteNote);
+router.post('/notes/delete/', noteController.deleteNote);
 
 module.exports = router;
 
